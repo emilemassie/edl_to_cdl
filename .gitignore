@@ -3,3 +3,4 @@ dist/
 .DS_STORE
 __pycache__
 ui/__pycache__
+'EDL TO CDL.spec'
