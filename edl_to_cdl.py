@@ -1,23 +1,3 @@
-##################################################
-##  edl2cdl_python3.py v3                                 ##
-##______________________________________________##
-##  Reads a CMX3600-like Edit Decision List     ##
-##  (EDL) file, extracts all the CDLs in it,    ##
-##  exports either  single Color Decision List  ##
-##  (.cdl file extension), a single correction  ##
-##  (.cc file extension), or a *Collection* of  ##
-##  of color corrections (.ccc file extension)  ##
-##  CDLs are then named or given IDs according  ##
-##  to the EDL tapenames. Footage coming from   ##
-##  ARRI, RED or similar cameras has tapenames  ##
-##  like "A001[_]C009[...]" which this utility  ##
-##  acknowledges to use "A001C001" as tapename  ##
-##  in IDs within the CCC file (or as filename  ##
-##  for individual CDLs/CCs within a folder.    ##
-##______________________________________________##
-##  Copyright (C) 2017 Walter Arrighetti, PhD   ##
-##                                              ##
-##################################################
 #!/usr/bin/env python 
 _version = "1.2"
 import os
@@ -26,8 +6,6 @@ import sys
 
 
 print ("EDL-to-CDL Conversion Utility version "+_version)
-print ("Copyright (C) 2017 Walter Arrighetti PhD, Frame by Frame Italia.\n")
-
 
 from PyQt5 import QtWidgets
 from EDLtoCDLUi import Ui_EDL_TO_CDL
@@ -233,6 +211,3 @@ app = QtWidgets.QApplication(sys.argv)
 application = EDL_TO_CLD()
 application.show()
 sys.exit(app.exec_())
-
-
-
