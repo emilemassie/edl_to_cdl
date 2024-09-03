@@ -7,9 +7,10 @@ Please look under the [releases](https://github.com/emilemassie/edl_to_cdl/relea
                                  
 This tool reads a CMX3600-like Edit Decision List (EDL) file, extracts all the Color Decision Lists (CDLs) contained within, and exports them in various formats:
 
-.cdl: A single Color Decision List file.
-.cc: A single color correction file.
-.ccc: A collection of color corrections.
+- .cdl: A single Color Decision List file.
+- .cc: A single color correction file.
+- .ccc: A collection of color corrections.
+
 CDLs are named or assigned IDs based on the EDL tapenames. For footage from ARRI, RED, or similar cameras, with tapenames like "A001[_]C009[...]", the utility recognizes and uses "A001C001" as the tapename in IDs within the CCC file or as filenames for individual CDLs/CCs within a folder.
 
 ## Original Code:
