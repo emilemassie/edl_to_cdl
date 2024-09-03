@@ -1,7 +1,7 @@
 # EDL to CDL
 ![image](https://github.com/user-attachments/assets/2fae7206-1f47-4c0b-89cd-7b248cd3f81d)
 
-Please look under the releases for the pre-compiled versions 
+Please look under the [releases](https://github.com/emilemassie/edl_to_cdl/releases) for the pre-compiled versions 
 
 ## Features.
                                  
