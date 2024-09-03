@@ -7,8 +7,8 @@ import sys
 
 print ("EDL-to-CDL Conversion Utility version "+_version)
 
-from PyQt5 import QtWidgets
-from EDLtoCDLUi import Ui_EDL_TO_CDL
+from PyQt5 import QtWidgets, QtGui
+from ui.edl_to_cdl_ui import Ui_EDL_TO_CDL
 
 class EDL_TO_CLD(QtWidgets.QWidget):
 	def __init__(self):
@@ -17,6 +17,7 @@ class EDL_TO_CLD(QtWidgets.QWidget):
 		self.ui = Ui_EDL_TO_CDL()
 		self.ui.setupUi(self)
 		self.setWindowTitle('EDL TO CDL')
+		self.setWindowIcon(QtGui.QIcon('icons/icon.png'))
 
 		self.edl_file = None
 		self.export_folder = None
@@ -211,3 +212,4 @@ app = QtWidgets.QApplication(sys.argv)
 application = EDL_TO_CLD()
 application.show()
 sys.exit(app.exec_())
+

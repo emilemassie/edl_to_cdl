@@ -74,12 +74,3 @@ class Ui_EDL_TO_CDL(object):
         self.comboBox.setItemText(2, _translate("EDL_TO_CDL", "CCC"))
         self.label_5.setText(_translate("EDL_TO_CDL", "EXPORT TYPE"))
 
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    EDL_TO_CDL = QtWidgets.QWidget()
-    ui = Ui_EDL_TO_CDL()
-    ui.setupUi(EDL_TO_CDL)
-    EDL_TO_CDL.show()
-    sys.exit(app.exec_())
